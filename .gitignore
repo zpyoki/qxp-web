@@ -16,5 +16,5 @@ tmp
 clients/components/icon/svg-hash.ts
 
 /pkg/
-
+/logs/
 vendor/

@@ -80,14 +80,14 @@ export function validateUsername(username: HTMLInputElement, message: HTMLElemen
     return false;
   }
 
-  if (
-    !/^1[0-9]{10}$/.test(username.value) &&
-    !/^([a-zA-Z0-9]+[_|_|.|+]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}$/.test(username.value)
-  ) {
-    message.innerText = '请输入正确格式的邮箱或手机号';
-    username.classList.add('error');
-    return false;
-  }
+  // if (
+  //   !/^1[0-9]{10}$/.test(username.value) &&
+  //   !/^([a-zA-Z0-9]+[_|_|.|+]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|_|.]?)*[a-zA-Z0-9]+.[a-zA-Z]{2,4}$/.test(username.value)
+  // ) {
+  //   message.innerText = '请输入正确格式的邮箱或手机号';
+  //   username.classList.add('error');
+  //   return false;
+  // }
 
   message.innerText = '';
   username.classList.remove('error');
